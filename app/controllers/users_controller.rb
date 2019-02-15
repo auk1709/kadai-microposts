@@ -33,7 +33,7 @@ class UsersController < ApplicationController
     counts(@user)
   end 
   
-  def follwers
+  def followers
     @user = User.find(params[:id])
     @followers = @user.followers.page(params[:page])
     counts(@user)

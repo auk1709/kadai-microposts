@@ -1,0 +1,3 @@
+<h2><%= @user.name %>のお気に入り一覧（<%= @count_fav_microposts %>件）</h2>
+
+<%= render 'microposts/microposts', microposts: @likes %>
